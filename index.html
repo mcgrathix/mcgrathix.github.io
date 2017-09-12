@@ -1,0 +1,30 @@
+<!DOCTYPE HTML><html><head><title>iPhoto Journal</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1' : '' %>" /><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta id="viewportMetaTag" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no"/><meta http-equiv="Content-type" content="text/html; charset=utf-8"/><meta http-equiv="Content-Script-Type" content="text/javascript"/><link rel="image_src" type="image/jpeg" href="static/journal/en-us/contents/source/resources/images/fb_icon.png"/><script type="text/javascript">require=sc_resource=function(){};String.preferredLanguage="en-us";RIGHT_TO_LEFT=String.preferredLanguage==="ar-sa"||String.preferredLanguage==="iw-il";
+RELATIVE_URLS=true;(function(){var srcs;if(window.devicePixelRatio==2){srcs=["static/journal/en-us/contents/stylesheet-no-repeat@2x.png","static/journal/en-us/contents/stylesheet-repeat-x@2x.png","static/journal/en-us/contents/stylesheet-repeat-y@2x.png"]
+}else{srcs=["static/journal/en-us/contents/stylesheet-no-repeat.png","static/journal/en-us/contents/stylesheet-repeat-x.png","static/journal/en-us/contents/stylesheet-repeat-y.png"]
+}for(var i=0,src;src=srcs&&srcs[i];i++){(srcs[i]=new Image()).src=src}})();(function(){var styles=[];
+if(window.devicePixelRatio==2||window.location.search.indexOf("2x")>-1){styles=["static/journal/en-us/contents/stylesheet@2x-packed.css"]
+}else{styles=["static/journal/en-us/contents/stylesheet-packed.css"]}var head=document.getElementsByTagName("head")[0];
+var len=styles.length,idx;for(idx=0;idx<len;idx++){var css=document.createElement("link");
+css.rel="stylesheet";css.type="text/css";css.href=styles[idx];css.media="screen";
+head.appendChild(css)}})();function redirectIfNecessary(){var baseUrl="https://www.icloud.com/journal/",loc=window.location+"",afterPoundSpot=(loc.indexOf("#")+1);
+if(loc.indexOf(baseUrl)!==0){return}if(loc.match(/\/journal\/\w\w\-\w\w\//)||RELATIVE_URLS){return
+}var languages="ar-sa ca-es cs-cz da-dk de-de el-gr en-us es-es fi-fi fr-fr hr-hr hu-hu id-id it-it iw-il ja-jp ko-kr ms-my nl-nl no-no pl-pl pt-br pt-pt ro-ro ru-ru sk-sk sv-se th-th tr-tr uk-ua vi-vi zh-cn zh-tw".split(" "),currPair=((navigator.language||navigator.browserLanguage||"en-us")+"").toLowerCase(),map={"he-il":"iw-il",he:"iw","nb-no":"no-no",nb:"no"};
+for(var key in map){if(key===currPair){currPair=map[key]}}if(currPair==="en-us"){return
+}var currLang=currPair.split("-")[0].substring(0,2),currLocale=currPair.split("-")[1],localesByLang={},localeArrsByLang={},i=0,pair,lang,locale,localeList,localeHash;
+for(i=0;(pair=languages[i])&&(pair=pair.split("-"));i++){if((localeHash=localesByLang[lang=pair[0]]||(localesByLang[lang]={}))[locale=pair[1]]!==(localeHash[locale]=true)){(localeList=localeArrsByLang[lang]||(localeArrsByLang[lang]=[])).push(pair[1])
+}}var bestLang=localesByLang[currLang]?currLang:"en",bestLangHash=localesByLang[bestLang],bestLocale=bestLangHash[currLocale]?currLocale:localeArrsByLang[bestLang][0],bestPair=bestLang+"-"+bestLocale,newLocation=baseUrl+(bestPair==="en-us"?"":bestPair+"/")+(afterPoundSpot?"#"+loc.substring(afterPoundSpot):"");
+if(bestPair==="en-us"){return}window.shouldAbortCore=true;window.location=newLocation
+}(function(){var loc=window.location+"";if(loc.indexOf("&view=local")===-1){redirectIfNecessary()
+}else{window.onload=redirectIfNecessary}})();</script></head><body><div id="loading"><script>window._rhtmlSpinnerTimeout=setTimeout(function(){var size=35,spinner="background:url(static/journal/en-us/contents/source/resources/images/spinner.png);";
+if(window.devicePixelRatio==2){spinner="background-image:url(static/journal/en-us/contents/source/resources/images/spinner@2x.png); background-size:35px 420px;"
+}var marginLeft=Math.round(size/-2),marginTop=marginLeft;window._rhtmlSpinnerTimeout=undefined;
+var outer=document.createElement("div"),inner=document.createElement("div"),pos=0;
+outer.style.cssText="z-index:30000; position:absolute; left:50%; top:50%; margin-left:"+marginLeft+"px; margin-top:"+marginTop+"px; width:"+size+"px; height:"+size+"px; overflow:hidden;";
+inner.style.cssText="position:absolute; left:0px; top:0px; width:"+size+"px; height:"+(size*12)+"px; "+spinner;
+outer.className="rhtml-loading-spinner";outer.appendChild(inner);document.body.appendChild(outer);
+var _rhtmlSpinnerInterval=setInterval(function(){pos=(pos+1)%12;inner.style.top=-pos*size+"px"
+},56);window._removeRHTMLSpinner=function(){var stop=function(){clearInterval(_rhtmlSpinnerInterval);
+_rhtmlSpinnerInterval=undefined;if(outer.parentNode){outer.parentNode.removeChild(outer)
+}};if(window.Anim){Anim.Fader.go({element:outer,from:1,to:0,duration:500,stopSpin:stop.observes("finish")})
+}else{stop()}}},100);window._removeRHTMLSpinner=function(){if(window._rhtmlSpinnerTimeout){clearTimeout(window._rhtmlSpinnerTimeout)
+}window._rhtmlSpinnerTimeout=undefined};</script></div><script type="text/javascript" src="static/journal/en-us/contents/javascript-packed.js"></script></body></html>
